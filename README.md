@@ -1,6 +1,38 @@
 # Code2AE Skill
 
-[中文](#中文) · [English](#english)
+[English](#english) · [中文](#中文)
+
+## English
+
+Code2AE is an agent skill for rebuilding HTML, Remotion, Hyperframe, and other code-based animation projects as editable After Effects projects. It guides the agent through source inspection, observation of the original output, reconstruction, and verification inside AE.
+
+### Installation
+
+Download or clone this repository, then name the folder `code2ae`:
+
+```sh
+git clone https://github.com/Oxoxxidane/Code2AE_skill.git code2ae
+```
+
+Place that complete folder in your agent's user skill directory, such as `~/.codex/skills/code2ae/` for Codex or `~/.claude/skills/code2ae/` for Claude Code.
+
+### Requirements and usage
+
+Complete these steps before using the skill:
+
+1. Visit [www.arbifx.com](https://www.arbifx.com), download the ArbiFX plugin, and follow its installation instructions to install it in After Effects.
+2. Register an account at [www.arbifx.com](https://www.arbifx.com) and sign in.
+3. Open your account dashboard on the website and create an API Key.
+4. In AE, open the **Start** window for your ArbiFX effect instance, then click the **API** button in the upper-right corner.
+5. Enter the **API Key** you just created, verify it, and save the configuration.
+
+**Use this skill only after the API Key has been successfully verified and the configuration has been saved.**
+
+Before using this skill in your agent, open AE and apply the **ArbiFX/AFX** effect to any layer at least once.
+
+Ask your agent to use `code2ae` and provide the source project, for example:
+
+> Use code2ae to rebuild this Remotion project as an editable After Effects project, faithfully reproduce its visuals and motion, and verify the result in AE.
 
 ## 中文
 
@@ -38,35 +70,3 @@ git clone https://github.com/Oxoxxidane/Code2AE_skill.git code2ae
 在 Agent 中点名 `code2ae` 并提供源工程，例如：
 
 > 使用 code2ae，将这个 Remotion 工程重建为可编辑的 AE 工程，忠实还原画面和动画，并完成实际 AE 检查。
-
-## English
-
-Code2AE is an agent skill for rebuilding HTML, Remotion, Hyperframe, and other code-based animation projects as editable After Effects projects. It guides the agent through source inspection, observation of the original output, reconstruction, and verification inside AE.
-
-### Installation
-
-Download or clone this repository, then name the folder `code2ae`:
-
-```sh
-git clone https://github.com/Oxoxxidane/Code2AE_skill.git code2ae
-```
-
-Place that complete folder in your agent's user skill directory, such as `~/.codex/skills/code2ae/` for Codex or `~/.claude/skills/code2ae/` for Claude Code.
-
-### Requirements and usage
-
-Complete these steps before using the skill:
-
-1. Visit [www.arbifx.com](https://www.arbifx.com), download the ArbiFX plugin, and follow its installation instructions to install it in After Effects.
-2. Register an account at [www.arbifx.com](https://www.arbifx.com) and sign in.
-3. Open your account dashboard on the website and create an API Key.
-4. In AE, open the **Start** window for your ArbiFX effect instance, then click the **API** button in the upper-right corner.
-5. Enter the **API Key** you just created, verify it, and save the configuration.
-
-**Use this skill only after the API Key has been successfully verified and the configuration has been saved.**
-
-Before using this skill in your agent, open AE and apply the **ArbiFX/AFX** effect to any layer at least once.
-
-Ask your agent to use `code2ae` and provide the source project, for example:
-
-> Use code2ae to rebuild this Remotion project as an editable After Effects project, faithfully reproduce its visuals and motion, and verify the result in AE.
